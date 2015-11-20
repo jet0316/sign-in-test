@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="master">
+    <head>
+        <title>Node Authentication</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
+    </head>
+    <body ng-controller="profile">
+        <div class="container">
+
+            <div class="page-header text-center">
+                <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+                <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+            </div>
+
+            <div class="row">
+
+                <!-- FACEBOOK INFORMATION -->
+                <div class="col-sm-6">
+                    <div class="well">
+                        <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+
+                            <p>
+                                <strong>id</strong>: {{user.facebook.id}}<br>
+                               <!--  <strong>token</strong>: {{user.facebook.token}}<br>
+                                <strong>name</strong>: {{user.facebook.name}} -->
+                            </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript", src="javascript/main.js"></script>
+    </body>
+</html>
